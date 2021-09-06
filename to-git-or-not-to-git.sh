@@ -1,4 +1,4 @@
 #! /bin/bash
 
 
-echo "id:930"
+echo "930"
