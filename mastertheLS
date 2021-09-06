@@ -1,1 +1,3 @@
-ls -Aptm
+#! /bin/bash 
+ls -t | tr '\n' ',' | sed 's/.$//'
+
