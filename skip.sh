@@ -1,1 +1,1 @@
-ls -l | sed '1d' | awk 'NR!=2'
+ls -l | sed -n '1~2p' 
