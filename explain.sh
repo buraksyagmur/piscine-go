@@ -1,8 +1,8 @@
 #! /bin/bash
-echo Annabel Church
-echo 699607
-echo Blue Honda
-echo Mike Bostock
-echo Joe Germuska
-echo Hellen Maher
+echo "Annabel Church
+699607
+Blue Honda
+Joe Germuska
+Hellen Maher
+Erik Owens"
 
