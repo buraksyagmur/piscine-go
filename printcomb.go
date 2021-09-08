@@ -3,9 +3,10 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintComb() {
-	for a := '0'; a <= '7'; a++ {
-		for b := a + 1; b <= '8'; b++ {
-			for c := b + 1; c <= '9'; c++ {
+	var aRune string = "789"
+	for a := '0'; a <= '6'; a++ {
+		for b := a + 1; b <= '7'; b++ {
+			for c := b + 1; c <= '8'; c++ {
 				for d := ','; d <= ','; d++ {
 					for e := ' '; e <= ' '; e++ {
 
@@ -19,5 +20,8 @@ func PrintComb() {
 			}
 		}
 	}
+	z01.PrintRune(rune(aRune[0]))
+	z01.PrintRune(rune(aRune[1]))
+	z01.PrintRune(rune(aRune[2]))
 	z01.PrintRune('\n')
 }
