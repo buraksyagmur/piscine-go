@@ -4,9 +4,9 @@ import "github.com/01-edu/z01"
 
 func PrintComb() {
 	var aRune string = "789"
-	for a := '0'; a <= '6'; a++ {
-		for b := a + 1; b <= '7'; b++ {
-			for c := b + 1; c <= '8'; c++ {
+	for a := '0'; a <= '7'; a++ {
+		for b := a + 1; b <= '8'; b++ {
+			for c := b + 1; c <= '9'; c++ {
 				for d := ','; d <= ','; d++ {
 					for e := ' '; e <= ' '; e++ {
 
