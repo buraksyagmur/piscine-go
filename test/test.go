@@ -1,14 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"piscine"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	piscine.PrintNbr(-123)
-	piscine.PrintNbr(0)
-	piscine.PrintNbr(123)
-	z01.PrintRune('\n')
+	fmt.Println(piscine.BasicAtoi("12345"))
+	fmt.Println(piscine.BasicAtoi("0000000012345"))
+	fmt.Println(piscine.BasicAtoi("000000"))
 }
