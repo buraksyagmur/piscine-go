@@ -11,7 +11,7 @@ func IterativeFactorial(nb int) int {
 	} else if nb == 1 {
 		return 1
 	} else if nb > 5 {
-		return 1
+		return 0
 	}
 	return nb
 }
