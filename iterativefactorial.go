@@ -4,7 +4,7 @@ func IterativeFactorial(nb int) int {
 	a := nb - 1
 	if nb < 0 {
 		return 0
-	} else if nb > 1 && nb < 5 {
+	} else if nb > 1 && nb < 12 {
 		for i := 1; i <= a; i++ {
 			nb *= i
 		}
