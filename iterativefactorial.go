@@ -10,7 +10,7 @@ func IterativeFactorial(nb int) int {
 		}
 	} else if nb == 1 {
 		return 1
-	} else if nb > 10 {
+	} else if nb > 12 {
 		return 0
 	} else if nb == 0 {
 		return 1
