@@ -1,0 +1,12 @@
+package piscine
+
+func IsLower(s string) bool {
+	a := []rune(s)
+	b := len(a) - 1
+	for i := 0; i <= b; i++ {
+		if (a[i] >= 0) && (a[i] <= 96) || (a[i] >= 123) && (a[i] <= 127) {
+			return false
+		}
+	}
+	return true
+}
