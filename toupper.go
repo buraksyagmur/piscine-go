@@ -5,7 +5,7 @@ func ToUpper(s string) string {
 	b := len(a) - 1
 	c := ""
 	for i := 0; i <= b; i++ {
-		if a[i] >= 97 && a[i] <= 127 {
+		if a[i] >= 97 && a[i] <= 122 {
 			a[i] = a[i] - 32
 		}
 		c += string(a[i])
