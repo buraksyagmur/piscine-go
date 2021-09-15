@@ -12,7 +12,7 @@ func Join(strs []string, sep string) string {
 		if i == (b - 1) {
 			c += a[i]
 		} else {
-			c += a[i] + ":"
+			c += a[i] + sep
 		}
 	}
 	return c
