@@ -13,7 +13,7 @@ func PrintNbrInOrder(n int) {
 		b[n%10]++
 		n /= 10
 	}
-	for i := 0; i < 9; i++ {
+	for i := 0; i <= 9; i++ {
 		for b[i] > 0 {
 			z01.PrintRune(rune(i) + '0')
 			b[i]--
