@@ -11,7 +11,7 @@ func main() {
 
 	c := len(a)
 
-	for i := c-1; i > 0; i-- {
+	for i := c - 1; i > 0; i-- {
 		result := []rune(a[i])
 		for k := 0; k < len(result); k++ {
 			z01.PrintRune(result[k])
