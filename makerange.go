@@ -5,7 +5,7 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 
-	a := make([]int, max-min+1)
+	a := make([]int, max-min)
 	for i := range a {
 		a[i] = min + i
 	}
