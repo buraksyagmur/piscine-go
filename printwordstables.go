@@ -32,4 +32,5 @@ func PrintWordsTables(a []string) {
 	z01.PrintRune(rune(result[15]))
 	z01.PrintRune(rune(result[16]))
 	z01.PrintRune(rune(result[17]))
+	z01.PrintRune('\n')
 }
