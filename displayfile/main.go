@@ -19,4 +19,5 @@ func main() {
 		file.Read(a)
 		fmt.Println(string(a))
 	}
+
 }
