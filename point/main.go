@@ -16,7 +16,7 @@ func main() {
 	points := &point{}
 
 	setPoint(points)
-	var aRune string = " x= "
+	var aRune string = "x = "
 	var bRune string = ", y = "
 	z01.PrintRune(rune(aRune[0]))
 	z01.PrintRune(rune(aRune[1]))
