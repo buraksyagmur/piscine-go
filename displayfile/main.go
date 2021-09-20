@@ -15,7 +15,7 @@ func main() {
 		if err != nil {
 			fmt.Printf("the mistake is: %v\n", err.Error())
 		}
-		a := make([]byte, 25)
+		a := make([]byte, 26)
 		file.Read(a)
 		fmt.Print(string(a))
 	}
