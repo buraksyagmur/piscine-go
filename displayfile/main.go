@@ -17,6 +17,6 @@ func main() {
 		}
 		a := make([]byte, 25)
 		file.Read(a)
-		fmt.Print(string(a))
+		fmt.Println(string(a))
 	}
 }
