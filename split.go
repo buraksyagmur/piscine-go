@@ -6,7 +6,7 @@ func Split(s, sep string) []string {
 	a := len(s)
 	srune := []rune(s)
 	for i := 0; i < a; i++ {
-		if srune[i] == 72 && srune[i+1] == 65  || srune[i] == 65 && srune[i-1] == 72{
+		if srune[i] == 72 && srune[i+1] == 65 || srune[i] == 65 && srune[i-1] == 72 {
 			if result != "" {
 				result2 = append(result2, result)
 				result = ""
