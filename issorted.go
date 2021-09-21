@@ -30,7 +30,7 @@ func isSuperior(a, b int) int {
 
 func lenghtof(d []int) int {
 	i := 0
-	for _, _ = range d {
+	for range d {
 		i++
 	}
 	return i
