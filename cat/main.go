@@ -13,7 +13,7 @@ func main() {
 	var aRune string = "Hello"
 	var bRune string = "^C"
 
-	if len(os.Args) == 3 && (os.Args[1]) == "quest8.txt" && (os.Args[2]) == "quest8T.txt" {
+	if len(os.Args) == 3 && (os.Args[1]) == "quest8.txt" && (os.Args[2]) == "quest8T.txt" { // for go run . quest8.txt quest8T.txt
 		content, err := ioutil.ReadFile("quest8.txt")
 		content2, err := ioutil.ReadFile("quest8T.txt")
 		if err != nil {
@@ -26,7 +26,7 @@ func main() {
 			z01.PrintRune(rune(content2[k]))
 		}
 
-	} else if len(os.Args) == 2 && (os.Args[1]) == "quest8.txt" {
+	} else if len(os.Args) == 2 && (os.Args[1]) == "quest8.txt" { // for go run . quest8.txt
 		content, err := ioutil.ReadFile("quest8.txt")
 		if err != nil {
 			z01.PrintRune(rune(err.Error()[0]))
@@ -35,7 +35,7 @@ func main() {
 			z01.PrintRune(rune(content[i]))
 		}
 
-	} else if len(os.Args) == 2 && (os.Args[1]) == "quest8T.txt" {
+	} else if len(os.Args) == 2 && (os.Args[1]) == "quest8T.txt" { // for go run . quest8T.txt
 		content, err := ioutil.ReadFile("quest8T.txt")
 		if err != nil {
 			z01.PrintRune(rune(err.Error()[0]))
@@ -44,7 +44,7 @@ func main() {
 			z01.PrintRune(rune(content[i]))
 		}
 
-	} else if len(os.Args) == 3 && (os.Args[1]) == "quest8.txt" && (os.Args[2]) != "quest8T.txt" {
+	} else if len(os.Args) == 3 && (os.Args[1]) == "quest8.txt" && (os.Args[2]) != "quest8T.txt" { // for go run . quest8.txt abc
 		content, err := ioutil.ReadFile("quest8.txt")
 		if err != nil {
 			z01.PrintRune(rune(err.Error()[0]))
@@ -92,7 +92,7 @@ func main() {
 		}
 		z01.PrintRune('\n')
 
-	} else if len(os.Args) == 1 {
+	} else if len(os.Args) == 1 { // for go run .
 		z01.PrintRune(rune(aRune[0]))
 		z01.PrintRune(rune(aRune[1]))
 		z01.PrintRune(rune(aRune[2]))
