@@ -1,7 +1,11 @@
 package piscine
-
+import "sort"
 func Abort(a, b, c, d, e int) int {
-	result := a + b + c + d + e
-	result /= 5
-	return result
+
+
+s:= []int{a,b,c,d,e}
+
+sort.Ints(s)
+
+return s[2]
 }
