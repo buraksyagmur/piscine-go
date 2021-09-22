@@ -1,6 +1,6 @@
 package piscine
 
-import "sort"
+
 
 // Copyright 2009 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
@@ -583,7 +583,7 @@ Calls to Swap O(n * log^2(n) - (t^2+t)/2*n) = O(n * log^2(n))
 func Abort(a, b, c, d, e int) int {
 	s := []int{a, b, c, d, e}
 
-	sort.Ints(s)
+	Ints(s)
 
 	return s[2]
 }
