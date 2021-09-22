@@ -1,19 +1,17 @@
 package piscine
 
-func ActiveBits(n int) uint {
-	counter := 0
-	if n < 0 {
-		n = -n
+func ActiveBits(n int) int {
+	d := 1
+	if n%2 == 0 {
+		d = 0
 	}
-	a := 0
-	b := 0
-	DivMod(n, 2, &b, &a)
-	for b > 0 {
-		DivMod(n, 2, &b, &a)
-		n = b
-		if a == 1 {
-			counter++
+	for n != 1 {
+		if n == 1 {
+			break
+		} else {
+			n = n / 2
+			d += n % 2
 		}
 	}
-	return uint(counter)
+	return int(d)
 }
