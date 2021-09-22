@@ -1,9 +1,9 @@
 package piscine
 
 func ActiveBits(n int) uint {
-	d := 1
+	d := 2
 	if n%2 == 0 {
-		d = 0
+		d = 1
 	}
 	for n != 1 {
 		if n == 1 {
@@ -13,5 +13,5 @@ func ActiveBits(n int) uint {
 			d += n % 2
 		}
 	}
-	return uint(d)
+	return uint(d-1)
 }
