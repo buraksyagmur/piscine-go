@@ -1,19 +1,18 @@
 package main
 
-import ("fmt"
+import (
+	"fmt"
 )
 
-type Pilot struct{
-	Name string
-	Life int
-	Age int
+type Pilot struct {
+	Name     string
+	Life     int
+	Age      int
 	Aircraft string
-	
 }
 
-
 func main() {
-AIRCRAFT1:= "1"
+	AIRCRAFT1 := "1"
 	var donnie Pilot
 	donnie.Name = "Donnie"
 	donnie.Life = 100.0
