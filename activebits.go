@@ -13,5 +13,5 @@ func ActiveBits(n int) uint {
 			d += n % 2
 		}
 	}
-	return uint(d-1)
+	return uint(d - 1)
 }
