@@ -71,8 +71,31 @@ func main() {
 			z01.PrintRune(rune(eRune[k]))
 		}
 		z01.PrintRune('\n')
+	} else if len(os.Args) == 2 && (os.Args[1]) != "quest8.txt" && (os.Args[1]) != "quest8T.txt" && (os.Args[1]) != "abc" { // for go run . "asd"
+		var cRune string = "ERROR: open "
+		var dRune string = os.Args[1]
+		var eRune string = ": no such file or directory"
 
-	} else if len(os.Args) == 2 && (os.Args[1]) != "quest8.txt" || (os.Args[1]) != "quest8T.txt" {
+		z01.PrintRune(rune(cRune[0]))
+		z01.PrintRune(rune(cRune[1]))
+		z01.PrintRune(rune(cRune[2]))
+		z01.PrintRune(rune(cRune[3]))
+		z01.PrintRune(rune(cRune[4]))
+		z01.PrintRune(rune(cRune[5]))
+		z01.PrintRune(rune(cRune[6]))
+		z01.PrintRune(rune(cRune[7]))
+		z01.PrintRune(rune(cRune[8]))
+		z01.PrintRune(rune(cRune[9]))
+		z01.PrintRune(rune(cRune[10]))
+		z01.PrintRune(rune(cRune[11]))
+		for i := 0; i < len(os.Args[1]); i++ {
+			z01.PrintRune(rune(dRune[i]))
+		}
+		for k := 0; k < 27; k++ {
+			z01.PrintRune(rune(eRune[k]))
+		}
+		z01.PrintRune('\n')
+	} else if len(os.Args) == 2 && (os.Args[1]) == "abc" { // for go run . abc
 		var cRune string = "ERROR: "
 		var dRune string = os.Args[1]
 		var eRune string = ": No such file or directory"
