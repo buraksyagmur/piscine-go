@@ -136,7 +136,7 @@ func main() {
 			z01.PrintRune(rune(fRune[11]))
 			z01.PrintRune(rune(fRune[12])) */
 
-	/*} else if len(os.Args) == 2 && (os.Args[1]) == "abc" { // for go run . abc
+		/*} else if len(os.Args) == 2 && (os.Args[1]) == "abc" { // for go run . abc
 		var cRune string = "ERROR: "
 		var dRune string = os.Args[1]
 		var eRune string = ": No such file or directory"
