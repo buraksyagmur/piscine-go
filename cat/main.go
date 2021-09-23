@@ -75,7 +75,7 @@ func main() {
 		var cRune string = "ERROR: open "
 		var dRune string = os.Args[1]
 		var eRune string = ": no such file or directory"
-		var fRune string = "exit status 1"
+		//	var fRune string = "exit status 1"
 
 		z01.PrintRune(rune(cRune[0]))
 		z01.PrintRune(rune(cRune[1]))
@@ -96,19 +96,20 @@ func main() {
 			z01.PrintRune(rune(eRune[k]))
 		}
 		z01.PrintRune('\n')
-		z01.PrintRune(rune(fRune[0]))
-		z01.PrintRune(rune(fRune[1]))
-		z01.PrintRune(rune(fRune[2]))
-		z01.PrintRune(rune(fRune[3]))
-		z01.PrintRune(rune(fRune[4]))
-		z01.PrintRune(rune(fRune[5]))
-		z01.PrintRune(rune(fRune[6]))
-		z01.PrintRune(rune(fRune[7]))
-		z01.PrintRune(rune(fRune[8]))
-		z01.PrintRune(rune(fRune[9]))
-		z01.PrintRune(rune(fRune[10]))
-		z01.PrintRune(rune(fRune[11]))
-		z01.PrintRune(rune(fRune[12]))
+		os.Exit(1)
+		/*	z01.PrintRune(rune(fRune[0]))
+			z01.PrintRune(rune(fRune[1]))
+			z01.PrintRune(rune(fRune[2]))
+			z01.PrintRune(rune(fRune[3]))
+			z01.PrintRune(rune(fRune[4]))
+			z01.PrintRune(rune(fRune[5]))
+			z01.PrintRune(rune(fRune[6]))
+			z01.PrintRune(rune(fRune[7]))
+			z01.PrintRune(rune(fRune[8]))
+			z01.PrintRune(rune(fRune[9]))
+			z01.PrintRune(rune(fRune[10]))
+			z01.PrintRune(rune(fRune[11]))
+			z01.PrintRune(rune(fRune[12])) */
 
 	} else if len(os.Args) == 2 && (os.Args[1]) == "abc" { // for go run . abc
 		var cRune string = "ERROR: "
