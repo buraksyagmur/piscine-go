@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	var aRune string = "Hello"
-	var bRune string = "^C"
+	//var aRune string = "Hello"
+//	var bRune string = "^C"
 
 	if len(os.Args) == 3 && (os.Args[1]) == "quest8.txt" && (os.Args[2]) == "quest8T.txt" { // for go run . quest8.txt quest8T.txt
 		content, err := ioutil.ReadFile("quest8.txt")
@@ -132,7 +132,7 @@ func main() {
 		z01.PrintRune('\n')
 
 	} else if len(os.Args) == 1 { // for go run .
-		z01.PrintRune(rune(aRune[0]))
+	/*	z01.PrintRune(rune(aRune[0]))
 		z01.PrintRune(rune(aRune[1]))
 		z01.PrintRune(rune(aRune[2]))
 		z01.PrintRune(rune(aRune[3]))
@@ -145,7 +145,7 @@ func main() {
 		z01.PrintRune(rune(aRune[4]))
 		z01.PrintRune('\n')
 		z01.PrintRune(rune(bRune[0]))
-		z01.PrintRune(rune(bRune[1]))
-		z01.PrintRune('\n')
+		z01.PrintRune(rune(bRune[1])) */
+		//z01.PrintRune('\n')
 	}
 }
